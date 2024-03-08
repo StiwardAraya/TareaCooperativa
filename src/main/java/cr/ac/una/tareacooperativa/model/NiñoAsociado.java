@@ -9,7 +9,6 @@ package cr.ac.una.tareacooperativa.model;
 public class NiñoAsociado extends Cuenta{
 
     private int tipoCuenta;
-    
 
     public NiñoAsociado() {
         super();
