@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="436.0" prefWidth="657.0" styleClass="mainFxmlClass" stylesheets="@justinstyles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.pruebasvistas.css.controller.BuzonController">
+   <children>
+      <HBox prefHeight="432.0" prefWidth="657.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="463.0" fitWidth="677.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../resources/mineB.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox prefHeight="54.0" prefWidth="120.0">
+         <children>
+            <Label prefHeight="65.0" prefWidth="124.0" styleClass="labelBuzon" stylesheets="@styles.css" text="Buzon" textAlignment="JUSTIFY" />
+         </children>
+      </HBox>
+      <VBox layoutY="176.0" prefHeight="287.0" prefWidth="158.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="519.0" AnchorPane.topAnchor="176.0">
+         <children>
+            <ImageView fitHeight="115.0" fitWidth="139.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/Billete1000.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="115.0" fitWidth="139.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/Billete2000.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="115.0" fitWidth="139.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/Billete5000.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="115.0" fitWidth="139.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/Billete10000.jpg.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <HBox layoutX="144.0" layoutY="322.0" prefHeight="141.0" prefWidth="255.0">
+         <children>
+            <ImageView fitHeight="141.0" fitWidth="156.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/Moneda500-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="141.0" fitWidth="156.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/Moneda100.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <Pane layoutX="471.0" layoutY="115.0" prefHeight="141.0" prefWidth="158.0">
+         <children>
+            <ImageView fitHeight="141.0" fitWidth="158.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../resources/alcancia.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
