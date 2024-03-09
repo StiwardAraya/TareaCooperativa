@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="cr.ac.una.tareacooperativa.controller.LoginController">
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+   <children>
+      <Pane layoutX="-4.0" prefHeight="404.0" prefWidth="245.0" styleClass="standard-pane">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" styleClass="title-label" text="CoopeKinder" />
+            <Button layoutX="2.0" layoutY="100.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="239.0" styleClass="standard-button" text="» A S O C I A D O S" />
+            <Button layoutX="2.0" layoutY="164.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="239.0" styleClass="standard-button" text="» F U N C I O N A R I O S" />
+            <Button layoutX="2.0" layoutY="228.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="239.0" styleClass="standard-button" text="» P R O F E S O R E S" />
+            <Label layoutX="74.0" layoutY="334.0" styleClass="web-label" text="Acerca de..." />
+         </children>
+      </Pane>
+      <Pane layoutX="244.0" prefHeight="404.0" prefWidth="358.0">
+         <children>
+            <ImageView fitHeight="428.0" fitWidth="406.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/ImagenPrincipal.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
