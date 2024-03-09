@@ -1,3 +1,5 @@
-cr\ac\una\tareacooperativa\controller\PrimaryController.class
-cr\ac\una\tareacooperativa\controller\SecondaryController.class
+cr\ac\una\tareacooperativa\controller\LoginController.class
+cr\ac\una\tareacooperativa\model\NiñoAsociado.class
+cr\ac\una\tareacooperativa\model\NiñoFuncionario.class
+cr\ac\una\tareacooperativa\model\Cuenta.class
 cr\ac\una\tareacooperativa\App.class

@@ -50,4 +50,5 @@
     -fx-text-fill: rgb(50, 50, 50);
     -fx-underline: true;
     -fx-cursor: hand;
+    -fx-font-weight: bold;
 }
