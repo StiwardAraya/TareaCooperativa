@@ -3,12 +3,12 @@
 -fx-background-radius:0;
 }
 
- .button : hover{
+ .button:hover{
 -fx-background-color: 0000FF ;
 -fx-background-radius: 30 0 0;
 }
 
- .button : pressed{
+ .button:pressed{
 -fx-background-color: 0000FF ;
 -fx-background-radius: 30 0 0;
 }
