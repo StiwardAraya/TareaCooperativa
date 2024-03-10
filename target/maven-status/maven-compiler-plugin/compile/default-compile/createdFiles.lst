@@ -1,9 +1,12 @@
 cr\ac\una\tareacooperativa\model\NiñoAsociado.class
 cr\ac\una\tareacooperativa\model\Cuenta.class
+cr\ac\una\tareacooperativa\controller\AsociadoController.class
 cr\ac\una\tareacooperativa\controller\LoginController.class
 cr\ac\una\tareacooperativa\model\NiñoFuncionario.class
 cr\ac\una\tareacooperativa\App.class
+cr\ac\una\tareacooperativa\controller\FuncionarioController.class
 cr\ac\una\tareacooperativa\controller\MantenimientoCoopeController.class
 cr\ac\una\tareacooperativa\controller\RetiroDineroController.class
 cr\ac\una\tareacooperativa\controller\ImpresionCarnetController.class
+cr\ac\una\tareacooperativa\controller\ProfesorController.class
 cr\ac\una\tareacooperativa\controller\BuzonController.class
