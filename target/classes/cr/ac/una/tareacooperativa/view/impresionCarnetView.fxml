@@ -22,7 +22,7 @@
             <VBox alignment="CENTER" layoutX="52.0" prefHeight="278.0" prefWidth="200.0" spacing="10.0">
                <children>
                   <Label styleClass="standard-label" text="Nombre Asociado: " />
-                  <TextField fx:id="txtNombreAsociado" />
+                  <TextField fx:id="txtNombreAsociado" styleClass="standard-text_field" />
                   <ImageView fitHeight="160.0" fitWidth="181.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../resources/userNotFound.jpg" />
@@ -36,7 +36,7 @@
             <String fx:value="standard-pane" />
          </styleClass>
       </Pane>
-      <HBox alignment="CENTER" layoutX="302.0" prefHeight="278.0" prefWidth="298.0" spacing="1.0">
+      <HBox alignment="CENTER" layoutX="302.0" prefHeight="278.0" prefWidth="298.0" spacing="1.0" styleClass="standard-light--pane">
          <children>
             <VBox alignment="CENTER" prefHeight="278.0" prefWidth="183.0" spacing="40.0">
                <children>

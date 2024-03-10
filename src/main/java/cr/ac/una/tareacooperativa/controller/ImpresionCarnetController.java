@@ -27,13 +27,16 @@ public class ImpresionCarnetController implements Initializable{
     public void initialize(URL url, ResourceBundle rb) {}
 
     @javafx.fxml.FXML
-    public void imprimirCarnet(Event event) {
+    public void imprimirCarnet(ActionEvent actionEvent) {
         //TODO accion para imprimir el carnet
     }
 
     @javafx.fxml.FXML
-    public void volver(Event event) {
+    public void volver(ActionEvent actionEvent) {
         //TODO accion para regresar
     }
 
+    public String getNombreAsociado(){
+        return this.txtNombreAsociado.getText();
+    }
 }

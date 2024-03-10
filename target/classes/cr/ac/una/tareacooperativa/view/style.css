@@ -27,22 +27,36 @@
 }.standard-button:hover{
     -fx-background-color: rgb(81, 130, 155);
     -fx-text-fill: rgb(234, 223, 180);
+}.standard-button:pressed{
+    -fx-background-color: rgb(40, 100, 120);
 }
 
 .standard-pane{
     -fx-background-color: rgb(155, 176, 193);
 }
 
+.standard-light--pane{
+    -fx-background-color: rgb(234, 223, 180);
+}
+
 .standard-label{
     -fx-font-size: 18px;
     -fx-font-weight: bold;
     -fx-text-fill: rgb(0, 0, 0);
+    -fx-padding: 5px;
 }
 
 .title-label{
     -fx-font-size: 24px;
     -fx-font-weight: bold;
     -fx-text-fill: rgb(0, 0, 0);
+    -fx-padding: 5px;
+}
+
+.standard-text_field{  /*Requiere de revisión*/
+    -fx-background-color: transparent;
+    -fx-margin: 10px;
+    -fx-border: 2px solid black;
 }
 
 .web-label{
@@ -51,4 +65,14 @@
     -fx-underline: true;
     -fx-cursor: hand;
     -fx-font-weight: bold;
+}
+
+.standard-hbox{
+    -fx-alignment: CENTER;
+}
+
+.standard-list_view{
+    -fx-background-color: rgb(81, 130, 155);
+    -fx-margin-left: 5px;
+    -fx-background-radius: 5%;
 }
