@@ -24,9 +24,7 @@ public class LoginController implements Initializable {
      * @param rb
      */
     @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }
+    public void initialize(URL url, ResourceBundle rb) {}
 
     @javafx.fxml.FXML
     public void abrirWeb(Event event) {
