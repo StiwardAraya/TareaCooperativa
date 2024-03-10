@@ -27,6 +27,8 @@
 }.standard-button:hover{
     -fx-background-color: rgb(81, 130, 155);
     -fx-text-fill: rgb(234, 223, 180);
+}.standard-button:pressed{
+    -fx-background-color: rgb(40, 100, 120);
 }
 
 .standard-pane{
