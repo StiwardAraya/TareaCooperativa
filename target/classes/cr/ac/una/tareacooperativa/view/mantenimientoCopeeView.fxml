@@ -11,33 +11,42 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane id="AnchorPane" prefHeight="401.0" prefWidth="698.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.tareacooperativa.controller.MantenimientoCoopeController">
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="906.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.tareacooperativa.controller.MantenimientoCoopeController">
     <stylesheets>
       <URL value="@style.css" />
    </stylesheets>
    <children>
-      <Pane prefHeight="401.0" prefWidth="331.0" styleClass="standard-pane">
+      <HBox alignment="CENTER" prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <ImageView fitHeight="322.0" fitWidth="221.0" layoutX="55.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" />
-         </children></Pane>
-      <VBox alignment="CENTER" layoutX="330.0" prefHeight="401.0" prefWidth="372.0" spacing="10.0" styleClass="standard-light--pane">
-         <children>
-            <Label prefHeight="45.0" prefWidth="339.0" styleClass="title-label" text="Mantenimiento Cooperativa" textAlignment="CENTER" />
-            <Label prefHeight="46.0" prefWidth="198.0" styleClass="standard-label" text="Nombre Cooperativa:" textAlignment="CENTER" />
-            <TextField fx:id="txtNombreCoope" prefHeight="31.0" prefWidth="321.0" styleClass="standard-text_field" />
-            <Label prefHeight="58.0" prefWidth="173.0" styleClass="standard-label" text="Logo/NuevoLogo: " textAlignment="CENTER" />
-            <ImageView fitHeight="97.0" fitWidth="170.0" pickOnBounds="true">
-               <image>
-                  <Image url="@../resources/coopeUserNotFound.png" />
-               </image>
-            </ImageView>
-            <HBox prefHeight="54.0" prefWidth="372.0" spacing="40.0" styleClass="standard-hbox">
+            <Pane prefHeight="600.0" prefWidth="400.0" styleClass="standard-pane" HBox.hgrow="ALWAYS">
                <children>
-                  <Button mnemonicParsing="false" onAction="#volver" prefHeight="46.0" prefWidth="96.0" styleClass="standard-button" text="Regresar" />
-                  <Button mnemonicParsing="false" onAction="#guardarCambios" prefHeight="46.0" prefWidth="90.0" styleClass="standard-button" text="Guardar" />
+                  <ImageView fitHeight="322.0" fitWidth="221.0" layoutX="55.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" />
                </children>
-            </HBox>
+            </Pane>
+            <Pane prefHeight="600.0" prefWidth="400.0" styleClass="standard-light--pane" HBox.hgrow="ALWAYS">
+               <children>
+                  <VBox alignment="CENTER" layoutX="26.0" prefHeight="600.0" prefWidth="402.0" spacing="10.0">
+                     <children>
+                        <Label prefHeight="45.0" prefWidth="339.0" styleClass="title-label" text="Mantenimiento Cooperativa" textAlignment="CENTER" />
+                        <Label prefHeight="46.0" prefWidth="198.0" styleClass="standard-label" text="Nombre Cooperativa:" textAlignment="CENTER" />
+                        <TextField fx:id="txtNombreCoope" prefHeight="31.0" prefWidth="321.0" styleClass="standard-text_field" />
+                        <Label prefHeight="58.0" prefWidth="173.0" styleClass="standard-label" text="Logo/NuevoLogo: " textAlignment="CENTER" />
+                        <ImageView fitHeight="97.0" fitWidth="170.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../resources/coopeUserNotFound.png" />
+                           </image>
+                        </ImageView>
+                        <HBox prefHeight="54.0" prefWidth="372.0" spacing="40.0" styleClass="standard-hbox">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#volver" prefHeight="46.0" prefWidth="96.0" styleClass="standard-button" text="Regresar" />
+                              <Button mnemonicParsing="false" onAction="#guardarCambios" prefHeight="46.0" prefWidth="90.0" styleClass="standard-button" text="Guardar" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
          </children>
-      </VBox>
+      </HBox>
    </children>
 </AnchorPane>

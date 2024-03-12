@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
 <?import java.net.URL?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
@@ -37,11 +38,15 @@
             </Pane>
             <Pane prefHeight="600.0" prefWidth="350.0" styleClass="standard-light--pane">
                <children>
-                  <VBox alignment="CENTER" prefHeight="600.0" prefWidth="350.0" spacing="30.0">
+                  <VBox alignment="CENTER" prefHeight="600.0" prefWidth="350.0" spacing="30.0" styleClass="standard-vbox">
                      <children>
-                        <Button mnemonicParsing="false" onAction="#volver" prefHeight="45.0" prefWidth="250.0" styleClass="standard-button" text="Atras" />
-                        <Button mnemonicParsing="false" onAction="#retiroMonto" prefHeight="45.0" prefWidth="250.0" styleClass="standard-button" text="Retirar" textAlignment="JUSTIFY" />
-                        <Button mnemonicParsing="false" onAction="#resMonto" prefHeight="45.0" prefWidth="250.0" styleClass="standard-button" text="Restablecer Monto" textAlignment="JUSTIFY" />
+                        <Button mnemonicParsing="false" onAction="#resMonto" prefHeight="70.0" prefWidth="250.0" styleClass="standard-button" text="Restablecer Monto" textAlignment="JUSTIFY" />
+                        <Button mnemonicParsing="false" onAction="#retiroMonto" prefHeight="70.0" prefWidth="250.0" styleClass="standard-button" text="Retirar" textAlignment="JUSTIFY" />
+                        <Button mnemonicParsing="false" onAction="#volver" prefHeight="70.0" prefWidth="250.0" text="Atras">
+                           <styleClass>
+                              <String fx:value="standard-back-button" />
+                              <String fx:value="standard-button" />
+                           </styleClass></Button>
                      </children>
                   </VBox>
                </children>

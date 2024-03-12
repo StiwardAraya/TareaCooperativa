@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.tareacooperativa.controller.MantenimientoCoopeController">
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="906.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.tareacooperativa.controller.MantenimientoCoopeController">
     <stylesheets>
       <URL value="@style.css" />
    </stylesheets>
@@ -25,7 +25,7 @@
             </Pane>
             <Pane prefHeight="600.0" prefWidth="400.0" styleClass="standard-light--pane" HBox.hgrow="ALWAYS">
                <children>
-                  <VBox alignment="CENTER" prefHeight="600.0" prefWidth="400.0" spacing="10.0">
+                  <VBox alignment="CENTER" layoutX="26.0" prefHeight="600.0" prefWidth="402.0" spacing="10.0">
                      <children>
                         <Label prefHeight="45.0" prefWidth="339.0" styleClass="title-label" text="Mantenimiento Cooperativa" textAlignment="CENTER" />
                         <Label prefHeight="46.0" prefWidth="198.0" styleClass="standard-label" text="Nombre Cooperativa:" textAlignment="CENTER" />

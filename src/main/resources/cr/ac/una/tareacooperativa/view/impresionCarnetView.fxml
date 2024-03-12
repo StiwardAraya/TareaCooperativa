@@ -21,7 +21,7 @@
          <children>
             <Pane prefHeight="600.0" prefWidth="400.0" HBox.hgrow="ALWAYS">
                <children>
-                  <VBox alignment="CENTER" layoutX="52.0" prefHeight="600.0" prefWidth="200.0" spacing="10.0">
+                  <VBox alignment="CENTER" layoutX="60.0" prefHeight="600.0" prefWidth="281.0" spacing="10.0">
                      <children>
                         <Label styleClass="standard-label" text="Nombre Asociado: " />
                         <TextField fx:id="txtNombreAsociado" styleClass="standard-text_field" />
