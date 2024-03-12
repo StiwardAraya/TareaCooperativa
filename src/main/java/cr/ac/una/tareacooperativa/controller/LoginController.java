@@ -12,7 +12,9 @@ import javafx.scene.control.Label;
 
 /**
  * Universidad Nacional - Programación II 2024
- * Controlador de la pantalla de inicio de sesión
+ * <p>
+ *     Controlador de la pantalla de inicio de sesión
+ * </p>
  * @author Stiward Araya 
  * @author Justin Mendez
  */
