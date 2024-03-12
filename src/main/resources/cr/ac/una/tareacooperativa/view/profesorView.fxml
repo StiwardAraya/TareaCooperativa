@@ -1,14 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.net.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.tareacooperativa.controller.ProfesorController">
+<AnchorPane id="AnchorPane" prefHeight="307.0" prefWidth="602.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="cr.ac.una.tareacooperativa.controller.ProfesorController">
     <stylesheets>
-        <URL value="@style.css"/>
+        <URL value="@style.css" />
     </stylesheets>
+   <children>
+      <HBox layoutX="46.0" layoutY="87.0" prefHeight="134.0" prefWidth="511.0" styleClass="standard-hbox">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="47.0" prefWidth="124.0" styleClass="standard-button" text="Cuentas" />
+            <Button mnemonicParsing="false" prefHeight="47.0" prefWidth="124.0" styleClass="standard-button" text="Cooperativa" />
+            <Button mnemonicParsing="false" prefHeight="47.0" prefWidth="124.0" text="Regresar">
+               <styleClass>
+                  <String fx:value="standard-button" />
+                  <String fx:value="standard-back-button" />
+               </styleClass>
+            </Button>
+         </children>
+      </HBox>
+      <Label layoutX="46.0" layoutY="28.0" styleClass="title-label" text="Profesor" />
+   </children>
+   <styleClass>
+      <String fx:value="mainFxmlClass" />
+      <String fx:value="standard-light--pane" />
+   </styleClass>
 </AnchorPane>

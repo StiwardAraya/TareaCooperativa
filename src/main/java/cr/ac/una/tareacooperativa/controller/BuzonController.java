@@ -8,7 +8,10 @@ import javafx.fxml.Initializable;
 
 /**
  * Universidad Nacional - Programación II 2024
- * Controlador de la pantalla de buzón
+ * <p>
+ *     Controlador de la pantalla de buzón
+ * <p/>
+ *
  * @author Stiward Araya
  * @author Justin Mendez
  */
