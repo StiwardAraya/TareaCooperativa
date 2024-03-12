@@ -7,42 +7,44 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.tareacooperativa.controller.LoginController">
     <stylesheets>
         <URL value="@style.css" />
     </stylesheets>
    <children>
-      <Pane layoutX="-4.0" prefHeight="404.0" prefWidth="245.0" styleClass="standard-pane">
+      <HBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label fx:id="lblNombreCoope" layoutX="14.0" layoutY="14.0" styleClass="title-label" text="CoopeKinder" />
-            <Button layoutX="2.0" layoutY="100.0" mnemonicParsing="false" onAction="#abrirVentanaAsociados" prefHeight="64.0" prefWidth="239.0" text="» A S O C I A D O S">
-               <styleClass>
-                  <String fx:value="standard-button" />
-                  <String fx:value="main-menu-button" />
-               </styleClass></Button>
-            <Button layoutX="2.0" layoutY="164.0" mnemonicParsing="false" onAction="#abrirVentanaFuncionarios" prefHeight="64.0" prefWidth="239.0" text="» F U N C I O N A R I O S">
-               <styleClass>
-                  <String fx:value="standard-button" />
-                  <String fx:value="main-menu-button" />
-               </styleClass></Button>
-            <Button layoutX="2.0" layoutY="228.0" mnemonicParsing="false" onAction="#abrirVentanaProfesores" prefHeight="64.0" prefWidth="239.0" text="» P R O F E S O R E S">
-               <styleClass>
-                  <String fx:value="standard-button" />
-                  <String fx:value="main-menu-button" />
-               </styleClass></Button>
-            <Label layoutX="74.0" layoutY="334.0" onMouseClicked="#abrirWeb" styleClass="web-label" text="Acerca de..." />
+            <Pane prefHeight="400.0" prefWidth="350.0" styleClass="standard-pane" HBox.hgrow="ALWAYS">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="400.0" prefWidth="350.0" spacing="12.0">
+                     <children>
+                        <Label fx:id="lblNombreCoope" styleClass="title-label" text="CoopeKinder" />
+                        <Button mnemonicParsing="false" onAction="#abrirVentanaProfesores" prefHeight="64.0" prefWidth="239.0" styleClass="standard-button" text="» P R O F E S O R E S" />
+                        <Button mnemonicParsing="false" onAction="#abrirVentanaFuncionarios" prefHeight="64.0" prefWidth="239.0" styleClass="standard-button" text="» F U N C I O N A R I O S" />
+                        <Button mnemonicParsing="false" onAction="#abrirVentanaAsociados" prefHeight="64.0" prefWidth="239.0" styleClass="standard-button" text="» A S O C I A D O S" />
+                        <VBox alignment="BOTTOM_CENTER" prefHeight="13.0" prefWidth="100.0">
+                           <children>
+                              <Label onMouseClicked="#abrirWeb" prefHeight="13.0" prefWidth="100.0" styleClass="web-label" text="Acerca de..." VBox.vgrow="ALWAYS" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <Pane prefHeight="400.0" prefWidth="250.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <ImageView fitHeight="400.0" fitWidth="450.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/ImagenPrincipal.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
          </children>
-      </Pane>
-      <Pane layoutX="244.0" prefHeight="404.0" prefWidth="358.0">
-         <children>
-            <ImageView fitHeight="428.0" fitWidth="406.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../resources/ImagenPrincipal.jpg" />
-               </image>
-            </ImageView>
-         </children>
-      </Pane>
+      </HBox>
    </children>
 </AnchorPane>

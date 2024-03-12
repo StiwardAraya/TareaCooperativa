@@ -89,3 +89,10 @@
     -fx-margin-left: 5px;
     -fx-background-radius: 5%;
 }
+
+.backgroundBuzon{
+    -fx-background-image: url("../resources/mineB.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
