@@ -65,11 +65,11 @@
     -fx-padding: 5px;
 }
 
-.standard-text_field{  /*Requiere de revisión*/
+/*.standard-text_field{
     -fx-background-color: transparent;
     -fx-margin: 10px;
     -fx-border: 2px solid black;
-}
+}*/
 
 .web-label{
     -fx-font-size: 15px;
