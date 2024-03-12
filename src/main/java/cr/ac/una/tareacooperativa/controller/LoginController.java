@@ -48,6 +48,6 @@ public class LoginController implements Initializable {
 
     @javafx.fxml.FXML
     public void abrirVentanaAsociados(ActionEvent actionEvent) throws IOException {
-        //TODO abrir ventana de asociados
+        App.setRoot("asociadoView");
     }
 }

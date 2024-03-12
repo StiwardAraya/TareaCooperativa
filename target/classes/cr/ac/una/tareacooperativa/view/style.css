@@ -82,6 +82,7 @@
 .standard-hbox{
     -fx-alignment: CENTER;
     -fx-spacing: 50px;
+    -fx-background-color: rgb(234, 223, 180);
 }
 
 .standard-list_view{
@@ -92,16 +93,10 @@
 
 .background-buzon{
     -fx-background-image: url("../resources/mineB.jpg");
-    -fx-background-size: cover;
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: center center;
 }
 
 .background-login{
     -fx-background-image: url("../resources/ImagenPrincipal.jpg");
-    -fx-background-size: cover;
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: center center;
 }
 
 .standard-vbox{
@@ -112,6 +107,13 @@
 
 .funcionario-background{
     -fx-background-image: url("../resources/NinnoFuncionario.jpg");
+}
+
+.asociado-background{
+    -fx-background-image: url("../resources/NinnaAsociada.jpg");
+}
+
+.images{
     -fx-background-size: cover;
     -fx-background-repeat: no-repeat;
     -fx-background-position: center center;

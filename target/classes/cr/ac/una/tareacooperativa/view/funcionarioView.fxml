@@ -28,6 +28,10 @@
             </Button>
          </children>
       </VBox>
-      <Pane layoutX="171.0" prefHeight="400.0" prefWidth="499.0" styleClass="funcionario-background" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="171.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane layoutX="171.0" prefHeight="400.0" prefWidth="499.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="171.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <styleClass>
+            <String fx:value="funcionario-background" />
+            <String fx:value="images" />
+         </styleClass></Pane>
    </children>
 </AnchorPane>
