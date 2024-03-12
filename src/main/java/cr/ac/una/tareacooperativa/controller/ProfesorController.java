@@ -10,7 +10,9 @@ import javafx.fxml.Initializable;
 
 /**
  * Universidad Nacional - Programación II 2024
- * Controlador de la pantalla de profesores
+ * <p>
+ *     Controlador de la pantalla de profesores
+ * </p>
  * @author Stiward Araya
  * @author Justin Mendez
  */

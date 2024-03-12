@@ -82,6 +82,7 @@
 .standard-hbox{
     -fx-alignment: CENTER;
     -fx-spacing: 50px;
+    -fx-background-color: rgb(234, 223, 180);
 }
 
 .standard-list_view{
@@ -101,7 +102,7 @@
     -fx-background-image: url("../resources/ImagenPrincipal.jpg");
     -fx-background-size: cover;
     -fx-background-repeat: no-repeat;
-    -fx-background-position: center center;
+    -fx-background-position: center;
 }
 
 .standard-vbox{

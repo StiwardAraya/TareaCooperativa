@@ -38,7 +38,7 @@ public class LoginController implements Initializable {
 
     @javafx.fxml.FXML
     public void abrirVentanaFuncionarios(ActionEvent actionEvent) throws IOException {
-        //TODO abrir ventana de funcionarios
+        App.setRoot("funcionarioView");
     }
 
     @javafx.fxml.FXML

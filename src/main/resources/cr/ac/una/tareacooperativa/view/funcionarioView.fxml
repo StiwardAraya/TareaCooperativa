@@ -20,7 +20,7 @@
             <Button mnemonicParsing="false" prefHeight="47.0" prefWidth="140.0" styleClass="standard-button" text="Carnet" />
             <Button mnemonicParsing="false" prefHeight="47.0" prefWidth="140.0" styleClass="standard-button" text="Cuentas" />
             <Button mnemonicParsing="false" prefHeight="47.0" prefWidth="140.0" styleClass="standard-button" text="Transacciones" />
-            <Button mnemonicParsing="false" prefHeight="47.0" prefWidth="140.0" text="Regresar">
+            <Button mnemonicParsing="false" onAction="#volver" prefHeight="47.0" prefWidth="140.0" text="Regresar">
                <styleClass>
                   <String fx:value="standard-button" />
                   <String fx:value="standard-back-button" />
