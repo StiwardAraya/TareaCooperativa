@@ -19,23 +19,19 @@
    <children>
       <HBox alignment="CENTER" prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Pane prefHeight="600.0" prefWidth="450.0" styleClass="standard-pane" HBox.hgrow="ALWAYS">
+            <VBox alignment="CENTER" prefHeight="600.0" prefWidth="450.0" HBox.hgrow="ALWAYS">
                <children>
-                  <VBox alignment="CENTER" prefHeight="600.0" prefWidth="450.0">
-                     <children>
-                        <Label styleClass="title-label" text="Retirar platica" textAlignment="JUSTIFY" />
-                        <Label prefHeight="42.0" prefWidth="400.0" styleClass="standard-label" text="Seleccione una cuenta para retiro de fondos: " textAlignment="JUSTIFY" />
-                        <ListView prefHeight="200.0" prefWidth="450.0" styleClass="standard-list_view" VBox.vgrow="ALWAYS">
-                           <VBox.margin>
-                              <Insets left="5.0" right="5.0" />
-                           </VBox.margin>
-                        </ListView>
-                        <Label prefHeight="45.0" prefWidth="331.0" styleClass="standard-label" text="Digite la cantidad de dinero a retirar:" />
-                        <TextField fx:id="txtCantidadRetiro" prefHeight="29.0" prefWidth="398.0" styleClass="standard-text_field" />
-                     </children>
-                  </VBox>
+                  <Label styleClass="title-label" text="Retirar platica" textAlignment="JUSTIFY" />
+                  <Label prefHeight="42.0" prefWidth="400.0" styleClass="standard-label" text="Seleccione una cuenta para retiro de fondos: " textAlignment="JUSTIFY" />
+                  <ListView prefHeight="200.0" prefWidth="450.0" styleClass="standard-list_view" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </ListView>
+                  <Label prefHeight="45.0" prefWidth="331.0" styleClass="standard-label" text="Digite la cantidad de dinero a retirar:" />
+                  <TextField fx:id="txtCantidadRetiro" prefHeight="29.0" prefWidth="398.0" styleClass="standard-text_field" />
                </children>
-            </Pane>
+            </VBox>
             <Pane prefHeight="600.0" prefWidth="350.0" styleClass="standard-light--pane">
                <children>
                   <VBox alignment="CENTER" prefHeight="600.0" prefWidth="350.0" spacing="30.0" styleClass="standard-vbox">
