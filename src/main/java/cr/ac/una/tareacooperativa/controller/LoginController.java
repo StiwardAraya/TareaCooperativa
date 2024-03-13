@@ -3,7 +3,6 @@ package cr.ac.una.tareacooperativa.controller;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-
 import cr.ac.una.tareacooperativa.App;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
@@ -20,6 +19,7 @@ import javafx.scene.control.Label;
  */
 public class LoginController implements Initializable {
 
+
     @javafx.fxml.FXML
     private Label lblNombreCoope;
 
@@ -32,22 +32,22 @@ public class LoginController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {}
 
     @javafx.fxml.FXML
-    public void abrirWeb(Event event) throws IOException{
+    public void onClickLabelAcercade(Event event) throws IOException{
         //TODO abrir webView con la web
     }
 
     @javafx.fxml.FXML
-    public void abrirVentanaFuncionarios(ActionEvent actionEvent) throws IOException {
+    public void onActionBtnFuncionarios(ActionEvent actionEvent) throws IOException {
         App.setRoot("funcionarioView");
     }
 
     @javafx.fxml.FXML
-    public void abrirVentanaProfesores(ActionEvent actionEvent) throws IOException {
+    public void onActionBtnProfesores(ActionEvent actionEvent) throws IOException {
         App.setRoot("profesorView");
     }
 
     @javafx.fxml.FXML
-    public void abrirVentanaAsociados(ActionEvent actionEvent) throws IOException {
+    public void onActionBtnAsociados(ActionEvent actionEvent) throws IOException {
         App.setRoot("asociadoView");
     }
 }
