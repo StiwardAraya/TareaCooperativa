@@ -43,6 +43,7 @@
     -fx-spacing: 15px;
     -fx-background-color: rgb(234, 223, 180);
     -fx-padding: 10px;
+    -fx-max-width: 400px;
 }
 
 .login-imagen{

@@ -16,7 +16,7 @@
    <children>
       <HBox prefHeight="237.0" prefWidth="416.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <VBox prefHeight="400.0" prefWidth="185.0" styleClass="login-vbox" HBox.hgrow="SOMETIMES">
+            <VBox prefHeight="400.0" prefWidth="185.0" styleClass="login-vbox" HBox.hgrow="ALWAYS">
                <children>
                   <Label fx:id="lblNombreCoope" maxHeight="1.7976931348623157E308" styleClass="login-titulo" text="KinderBanca" VBox.vgrow="ALWAYS">
                      <VBox.margin>
@@ -33,7 +33,7 @@
                   </Label>
                </children>
             </VBox>
-            <Pane maxWidth="900.0" prefHeight="400.0" prefWidth="417.0" styleClass="login-imagen" HBox.hgrow="ALWAYS" />
+            <Pane maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="417.0" styleClass="login-imagen" HBox.hgrow="ALWAYS" />
          </children>
       </HBox>
    </children>
