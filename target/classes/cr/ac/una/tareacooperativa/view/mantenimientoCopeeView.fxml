@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
 <?import io.github.palexdev.materialfx.controls.MFXTextField?>
 <?import java.lang.String?>
 <?import java.net.URL?>
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="906.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.tareacooperativa.controller.MantenimientoCoopeController">
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.tareacooperativa.controller.MantenimientoCoopeController">
     <stylesheets>
       <URL value="@style.css" />
    </stylesheets>
@@ -44,8 +44,8 @@
                         </ImageView>
                         <HBox alignment="CENTER" prefHeight="54.0" prefWidth="372.0" spacing="40.0">
                            <children>
-                              <Button mnemonicParsing="false" onAction="#volver" prefHeight="46.0" prefWidth="96.0" styleClass="standard-button" text="Regresar" />
-                              <Button mnemonicParsing="false" onAction="#guardarCambios" prefHeight="46.0" prefWidth="90.0" styleClass="standard-button" text="Guardar" />
+                              <MFXButton text="Regresar" />
+                              <MFXButton layoutX="157.0" layoutY="29.0" text="Guardar" />
                            </children>
                         </HBox>
                      </children>
