@@ -179,8 +179,19 @@
      -fx-background-image: url("../resources/mantenimiento.png");
 }
 
+.camara-background{
+     -fx-background-image: url("../resources/pp.jpg");
+}
+.foto-background{
+     -fx-background-image: url("../resources/camera.png");
+      -fx-border-color: #ccc;
+    -fx-border-width: 10px;
+    -fx-border-style: solid;
+-fx-border-color: black;
+     
+}
 .images{
-   -fx-background-repeat: no-repeat;
+  -fx-background-repeat: no-repeat;
   -fx-background-size: stretch;
   -fx-background-position: center;
 }
