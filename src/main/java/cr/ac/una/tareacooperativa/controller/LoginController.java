@@ -31,21 +31,41 @@ public class LoginController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {}
 
+    /**
+     * Control de evento, enlace web
+     * @param event
+     * @throws IOException
+     */
     @javafx.fxml.FXML
     public void onClickLabelAcercade(Event event) throws IOException{
         //TODO abrir webView con la web
     }
 
+    /**
+     * Control de evento, botón funcionarios
+     * @param actionEvent
+     * @throws IOException
+     */
     @javafx.fxml.FXML
     public void onActionBtnFuncionarios(ActionEvent actionEvent) throws IOException {
         App.setRoot("funcionarioView");
     }
 
+    /**
+     * Control de evento, botón profesores
+     * @param actionEvent
+     * @throws IOException
+     */
     @javafx.fxml.FXML
     public void onActionBtnProfesores(ActionEvent actionEvent) throws IOException {
         App.setRoot("profesorView");
     }
 
+    /**
+     * Control de evento, botón Asociados
+     * @param actionEvent
+     * @throws IOException
+     */
     @javafx.fxml.FXML
     public void onActionBtnAsociados(ActionEvent actionEvent) throws IOException {
         App.setRoot("asociadoView");

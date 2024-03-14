@@ -9,7 +9,11 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 /**
- * JavaFX App
+ * <p>
+ *     Universidad Nacional de Costa Rica <br>
+ *     Programación II 2024 - Tarea I <br>
+ *     JavaFX App
+ * </p>
  */
 public class App extends Application {
 
@@ -22,10 +26,25 @@ public class App extends Application {
         stage.show();
     }
 
+    /**
+     * <p>
+     *     Recibe un archivo fxml y lo carga en el scene del stage principal
+     * </p>
+     * @param fxml
+     * @throws IOException
+     */
     public static void setRoot(String fxml) throws IOException {
         scene.setRoot(loadFXML(fxml));
     }
 
+    /**
+     * <p>
+     *     Busca un archivo fxml y lo carga en un objeto
+     * </p>
+     * @param fxml
+     * @return
+     * @throws IOException
+     */
     private static Parent loadFXML(String fxml) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("view/" + fxml + ".fxml"));
         return fxmlLoader.load();
