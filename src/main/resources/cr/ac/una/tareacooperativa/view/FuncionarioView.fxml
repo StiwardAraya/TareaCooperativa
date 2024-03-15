@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import io.github.palexdev.materialfx.controls.MFXButton?>
-<?import java.lang.String?>
 <?import java.net.URL?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
 <AnchorPane id="AnchorPane" prefHeight="396.0" prefWidth="670.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.tareacooperativa.controller.FuncionarioController">
@@ -13,20 +17,97 @@
         <URL value="@style.css" />
     </stylesheets>
    <children>
-      <VBox prefHeight="400.0" prefWidth="173.0" styleClass="standard-vbox" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <HBox layoutX="224.0" layoutY="126.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label styleClass="title-label" text="Funcionarios" />
-            <MFXButton layoutX="77.0" layoutY="239.0" text="Asociados" />
-            <MFXButton text="Carnet" />
-            <MFXButton layoutX="77.0" layoutY="259.0" text="Cuentas" />
-            <MFXButton layoutX="74.0" layoutY="246.0" text="Transacciones" />
-            <MFXButton layoutX="77.0" layoutY="221.0" onAction="#volver" styleClass="standard-back-button" text="Regresar" />
+            <VBox maxWidth="400.0" prefHeight="396.0" prefWidth="220.0" styleClass="funcionario-vbox--menu_principal" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="funcionario-hbox--tituloLogo" VBox.vgrow="ALWAYS">
+                     <children>
+                        <ImageView fitHeight="36.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/funcionarioLogo.png" />
+                           </image>
+                        </ImageView>
+                        <Label styleClass="funcionario-titulo" text="Funcionarios">
+                           <HBox.margin>
+                              <Insets top="3.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="funcionario-hbox--boton_menu" VBox.vgrow="SOMETIMES">
+                     <children>
+                        <ImageView fitHeight="36.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/asociadoLogo.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets top="3.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <MFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="funcionario-boton--menu" text="Asociados" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="funcionario-hbox--boton_menu" VBox.vgrow="SOMETIMES">
+                     <children>
+                        <ImageView fitHeight="39.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true" styleClass="icon-color--fix">
+                           <image>
+                              <Image url="@../resources/logoCarnet.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets top="1.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <MFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="funcionario-boton--menu" text="Carnet" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="funcionario-hbox--boton_menu" VBox.vgrow="SOMETIMES">
+                     <children>
+                        <ImageView fitHeight="38.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true" styleClass="icon-color--fix">
+                           <image>
+                              <Image url="@../resources/logoCuentas.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets top="3.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <MFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="funcionario-boton--menu" text="Cuentas" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="funcionario-hbox--boton_menu" VBox.vgrow="SOMETIMES">
+                     <children>
+                        <ImageView fitHeight="36.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="icon-color--fix">
+                           <image>
+                              <Image url="@../resources/LogoTransacciones.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets top="3.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <MFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="funcionario-boton--menu" text="Transacciones" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="funcionario-hbox--boton_menu" VBox.vgrow="ALWAYS">
+                     <children>
+                        <ImageView fitHeight="40.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true" styleClass="icon-color--fix">
+                           <image>
+                              <Image url="@../resources/Exit.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets top="3.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <MFXButton maxHeight="45.0" maxWidth="100.0" onAction="#onActionSalirButton" styleClass="funcionario-boton--salir" text="Salir" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <StackPane maxWidth="1.7976931348623157E308" prefHeight="396.0" prefWidth="457.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="200.0" styleClass="funcionario-imagen" />
+               </children>
+            </StackPane>
          </children>
-      </VBox>
-      <Pane layoutX="171.0" prefHeight="400.0" prefWidth="499.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="171.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <styleClass>
-            <String fx:value="funcionario-background" />
-            <String fx:value="images" />
-         </styleClass></Pane>
+      </HBox>
    </children>
 </AnchorPane>

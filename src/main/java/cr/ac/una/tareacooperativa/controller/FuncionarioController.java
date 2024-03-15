@@ -28,7 +28,7 @@ public class FuncionarioController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) { }
 
     @FXML
-    private void volver(ActionEvent event) throws IOException {
+    private void onActionSalirButton(ActionEvent event) throws IOException {
         App.setRoot("loginView");
     }
 }

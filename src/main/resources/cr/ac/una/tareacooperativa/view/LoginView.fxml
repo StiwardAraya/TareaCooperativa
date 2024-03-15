@@ -50,7 +50,7 @@
                               <Insets top="5.0" />
                            </HBox.margin>
                         </ImageView>
-                        <MFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onActionBtnFuncionarios" styleClass="login-boton--menu" text="Funcionarios" HBox.hgrow="ALWAYS" />
+                        <MFXButton maxHeight="1.7976931348623157E308" maxWidth="300.0" onAction="#onActionBtnFuncionarios" styleClass="login-boton--menu" text="Funcionarios" HBox.hgrow="ALWAYS" />
                      </children>
                   </HBox>
                   <HBox styleClass="login-hbox--boton">
@@ -63,7 +63,7 @@
                               <Insets top="5.0" />
                            </HBox.margin>
                         </ImageView>
-                        <MFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onActionBtnProfesores" styleClass="login-boton--menu" text="Profesores" HBox.hgrow="ALWAYS" />
+                        <MFXButton maxHeight="1.7976931348623157E308" maxWidth="300.0" onAction="#onActionBtnProfesores" styleClass="login-boton--menu" text="Profesores" HBox.hgrow="ALWAYS" />
                      </children>
                   </HBox>
                   <HBox styleClass="login-hbox--boton">
@@ -76,7 +76,7 @@
                               <Insets top="5.0" />
                            </HBox.margin>
                         </ImageView>
-                        <MFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onActionBtnAsociados" styleClass="login-boton--menu" text="Asociados" HBox.hgrow="ALWAYS" />
+                        <MFXButton maxHeight="1.7976931348623157E308" maxWidth="300.0" onAction="#onActionBtnAsociados" styleClass="login-boton--menu" text="Asociados" HBox.hgrow="ALWAYS" />
                      </children>
                   </HBox>
                   <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#onClickLabelAcercade" styleClass="login-web--label" text="Acerca de..." VBox.vgrow="ALWAYS">

@@ -16,6 +16,8 @@
     -fx-padding: 0;
 }
 
+/* LOGIN VIEW */
+
 .login-titulo{
     -fx-font-size: 20px;
     -fx-font-weight: bold;
@@ -74,6 +76,77 @@
 .login-hbox--boton{
     -fx-padding: 5px;
     -fx-spacing: 5px;
+}
+
+/* FUNCIONARIO VIEW */
+.funcionario-vbox--menu_principal{
+    -fx-alignment: CENTER;
+    -fx-spacing: 15px;
+    -fx-background-color: rgb(234, 223, 180);
+    -fx-padding: 10px;
+}
+
+.funcionario-titulo{
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.funcionario-boton--menu{
+    -fx-background-color: rgb(155, 176, 193);
+    -fx-text-fill: rgb(40, 90, 120);
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-alignment: BASELINE_LEFT;
+    -fx-label-padding: 10px;
+    -fx-cursor: hand;
+    -fx-margin: 40px 40px;
+    -mfx-button-type: RAISED;
+    -mfx-depth-level: LEVEL2;
+}.funcionario-boton--menu:hover{
+     -fx-background-color: rgb(81, 130, 155);
+     -fx-text-fill: rgb(234, 223, 180);
+}.funcionario-boton--menu:pressed{
+     -fx-background-color: rgb(40, 100, 120);
+}
+
+.funcionario-boton--salir{
+    -fx-background-color: rgb(246, 153, 92);
+    -fx-text-fill: rgb(40, 90, 120);
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-alignment: BASELINE_CENTER;
+    -fx-label-padding: 10px;
+    -fx-cursor: hand;
+    -fx-margin: 40px 40px;
+    -mfx-button-type: RAISED;
+    -mfx-depth-level: LEVEL2;
+}.funcionario-boton--salir:hover{
+    -fx-background-color: rgb(81, 130, 155);
+    -fx-text-fill: rgb(234, 223, 180);
+}.funcionario-boton--salir:pressed{
+    -fx-background-color: rgb(40, 100, 120);
+}
+
+.funcionario-imagen{
+    -fx-background-image: url("../resources/NinnoFuncionario.jpg");
+    -fx-background-position: center;
+    -fx-background-size: stretch;
+}
+
+.funcionario-hbox--tituloLogo {
+    -fx-padding: 5px;
+    -fx-spacing: 5px;
+    -fx-alignment: CENTER;
+}
+
+.funcionario-hbox--boton_menu{
+    -fx-padding: 5px;
+    -fx-spacing: 5px;
+    -fx-alignment: CENTER;
+}
+
+.icon-color--fix{
+    -fx-opacity: .61;
 }
 
 /*Estilos estandar(viejos)*/
