@@ -48,6 +48,10 @@ public class FuncionarioController implements Initializable {
         rootCarnetView.setDisable(true);
     }
 
+    /**
+     * Control de evento, botón Asociados
+     * @param actionEvent
+     */
     @FXML
     public void onActionAsociadosButton(ActionEvent actionEvent) {
         rootAsociadosView.setVisible(true);
@@ -55,6 +59,10 @@ public class FuncionarioController implements Initializable {
         rootAsociadosView.setScaleZ(10);
     }
 
+    /**
+     * Control de evento, botón Carnet
+     * @param actionEvent
+     */
     @FXML
     public void onActionCarnetButton(ActionEvent actionEvent) {
         rootCarnetView.setVisible(true);
@@ -62,6 +70,10 @@ public class FuncionarioController implements Initializable {
         rootCarnetView.setScaleZ(10);
     }
 
+    /**
+     * Control de evento, botón Cuentas
+     * @param actionEvent
+     */
     @FXML
     public void onActionCuentasButton(ActionEvent actionEvent) {
         rootCuentasView.setVisible(true);
@@ -69,6 +81,10 @@ public class FuncionarioController implements Initializable {
         rootCuentasView.setScaleZ(10);
     }
 
+    /**
+     * Control de evento, botón transacciones
+     * @param actionEvent
+     */
     @FXML
     public void onActionTransaccionesButton(ActionEvent actionEvent) {
         rootTransaccionesView.setVisible(true);
@@ -76,6 +92,11 @@ public class FuncionarioController implements Initializable {
         rootTransaccionesView.setScaleZ(10);
     }
 
+    /**
+     * Control de evento, botón Salir
+     * @param event
+     * @throws IOException
+     */
     @FXML
     private void onActionSalirButton(ActionEvent event) throws IOException {
         App.setRoot("loginView");
