@@ -8,6 +8,8 @@ import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
 
 /**
  * Universidad Nacional - Programación II 2024
@@ -22,6 +24,10 @@ public class LoginController implements Initializable {
 
     @javafx.fxml.FXML
     private Label lblNombreCoope;
+    @javafx.fxml.FXML
+    private ImageView imvLogoCoope;
+    @javafx.fxml.FXML
+    private AnchorPane root;
 
     /**
      * Initializes the controller class.

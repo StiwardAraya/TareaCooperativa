@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane id="AnchorPane" prefHeight="396.0" prefWidth="670.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.tareacooperativa.controller.FuncionarioController">
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="396.0" prefWidth="670.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.tareacooperativa.controller.FuncionarioController">
     <stylesheets>
         <URL value="@style.css" />
     </stylesheets>
@@ -45,7 +45,7 @@
                               <Insets top="3.0" />
                            </HBox.margin>
                         </ImageView>
-                        <MFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="funcionario-boton--menu" text="Asociados" HBox.hgrow="ALWAYS" />
+                        <MFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onActionAsociadosButton" styleClass="funcionario-boton--menu" text="Asociados" HBox.hgrow="ALWAYS" />
                      </children>
                   </HBox>
                   <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="funcionario-hbox--boton_menu" VBox.vgrow="SOMETIMES">
@@ -58,7 +58,7 @@
                               <Insets top="1.0" />
                            </HBox.margin>
                         </ImageView>
-                        <MFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="funcionario-boton--menu" text="Carnet" HBox.hgrow="ALWAYS" />
+                        <MFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onActionCarnetButton" styleClass="funcionario-boton--menu" text="Carnet" HBox.hgrow="ALWAYS" />
                      </children>
                   </HBox>
                   <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="funcionario-hbox--boton_menu" VBox.vgrow="SOMETIMES">
@@ -71,7 +71,7 @@
                               <Insets top="3.0" />
                            </HBox.margin>
                         </ImageView>
-                        <MFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="funcionario-boton--menu" text="Cuentas" HBox.hgrow="ALWAYS" />
+                        <MFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onActionCuentasButton" styleClass="funcionario-boton--menu" text="Cuentas" HBox.hgrow="ALWAYS" />
                      </children>
                   </HBox>
                   <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="funcionario-hbox--boton_menu" VBox.vgrow="SOMETIMES">
@@ -84,7 +84,7 @@
                               <Insets top="3.0" />
                            </HBox.margin>
                         </ImageView>
-                        <MFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="funcionario-boton--menu" text="Transacciones" HBox.hgrow="ALWAYS" />
+                        <MFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#onActionTransaccionesButton" styleClass="funcionario-boton--menu" text="Transacciones" HBox.hgrow="ALWAYS" />
                      </children>
                   </HBox>
                   <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="funcionario-hbox--boton_menu" VBox.vgrow="ALWAYS">
@@ -105,6 +105,38 @@
             <StackPane maxWidth="1.7976931348623157E308" prefHeight="396.0" prefWidth="457.0" HBox.hgrow="ALWAYS">
                <children>
                   <Pane prefHeight="200.0" prefWidth="200.0" styleClass="funcionario-imagen" />
+                  <AnchorPane fx:id="rootAsociadosView" prefHeight="200.0" prefWidth="200.0" styleClass="funcionario-root--view">
+                     <StackPane.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </StackPane.margin>
+                     <children>
+                        <Label text="Asociados" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="rootCarnetView" prefHeight="200.0" prefWidth="200.0" styleClass="funcionario-root--view">
+                     <StackPane.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </StackPane.margin>
+                     <children>
+                        <Label text="Carnet" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="rootTransaccionesView" prefHeight="200.0" prefWidth="200.0" styleClass="funcionario-root--view">
+                     <StackPane.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </StackPane.margin>
+                     <children>
+                        <Label text="Transacciones" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="rootCuentasView" prefHeight="200.0" prefWidth="200.0" styleClass="funcionario-root--view">
+                     <StackPane.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </StackPane.margin>
+                     <children>
+                        <Label text="Cuentas" />
+                     </children>
+                  </AnchorPane>
                </children>
             </StackPane>
          </children>

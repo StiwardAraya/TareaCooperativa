@@ -149,6 +149,10 @@
     -fx-opacity: .61;
 }
 
+.funcionario-root--view{
+    -fx-background-color: rgb(234, 223, 180);
+}
+
 /*Estilos estandar(viejos)*/
 .standard-button{
     -fx-background-color: rgb(155, 176, 193);
