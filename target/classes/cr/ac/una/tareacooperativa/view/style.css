@@ -19,7 +19,7 @@
 /* LOGIN VIEW */
 
 .login-titulo{
-    -fx-font-size: 20px;
+    -fx-font-size: 22px;
     -fx-font-weight: bold;
     -fx-text-fill: rgb(0, 0, 0);
 }

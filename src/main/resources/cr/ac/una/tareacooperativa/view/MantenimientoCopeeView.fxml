@@ -37,10 +37,13 @@
                            </VBox.margin>
                         </MFXTextField>
                         <Label prefHeight="58.0" prefWidth="173.0" styleClass="standard-label" text="Logo/NuevoLogo: " textAlignment="CENTER" />
-                        <ImageView fitHeight="97.0" fitWidth="170.0" pickOnBounds="true">
+                        <ImageView fx:id="imgViewLogo" fitHeight="211.0" fitWidth="335.0" onDragDropped="#imgViewLogoOnDragDropped" onDragOver="#imgViewLogoOnDragOver" pickOnBounds="true" VBox.vgrow="ALWAYS">
                            <image>
                               <Image url="@../resources/coopeUserNotFound.png" />
                            </image>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
                         </ImageView>
                         <HBox alignment="CENTER" prefHeight="54.0" prefWidth="372.0" spacing="40.0">
                            <children>
