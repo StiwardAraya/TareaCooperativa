@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXListView?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
 <?import java.net.URL?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.StackPane?>
@@ -134,7 +137,54 @@
                         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                      </StackPane.margin>
                      <children>
-                        <Label text="Cuentas" />
+                        <BorderPane layoutX="107.0" layoutY="64.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <top>
+                              <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="414.0" styleClass="vtncuentas-vbox" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Label maxHeight="1.7976931348623157E308" styleClass="vtncuentas-titulo" text="Cuentas" VBox.vgrow="ALWAYS">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </Label>
+                                    <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="vtncuentas-hbox--form_folio" VBox.vgrow="ALWAYS">
+                                       <children>
+                                          <MFXTextField floatMode="BORDER" floatingText="Folio" maxHeight="1.7976931348623157E308" maxWidth="120.0" styleClass="vtncuentas-txtfolio" HBox.hgrow="ALWAYS" />
+                                          <MFXButton maxHeight="1.7976931348623157E308" maxWidth="100.0" styleClass="vtncuentas-boton" text="Buscar" HBox.hgrow="ALWAYS" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </top>
+                           <center>
+                              <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0" styleClass="vtncuentas-hbox--listas" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <MFXListView maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="vtncuentas-lista" HBox.hgrow="ALWAYS" />
+                                    <ImageView fitHeight="34.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../resources/cambio.png" />
+                                       </image>
+                                    </ImageView>
+                                    <MFXListView maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="vtncuentas-lista" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                           </center>
+                           <bottom>
+                              <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="56.0" prefWidth="414.0" styleClass="vtncuentas-hbox--botones" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <MFXButton maxHeight="1.7976931348623157E308" maxWidth="300.0" styleClass="vtncuentas-boton" text="Guardar" HBox.hgrow="ALWAYS">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </MFXButton>
+                                    <MFXButton maxHeight="1.7976931348623157E308" maxWidth="300.0" styleClass="vtncuentas-boton--cerrar" text="Cerrar" HBox.hgrow="ALWAYS">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </MFXButton>
+                                 </children>
+                              </HBox>
+                           </bottom>
+                        </BorderPane>
                      </children>
                   </AnchorPane>
                </children>
