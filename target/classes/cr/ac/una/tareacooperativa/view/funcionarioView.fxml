@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import io.github.palexdev.materialfx.controls.MFXButton?>
-<?import io.github.palexdev.materialfx.controls.MFXListView?>
 <?import io.github.palexdev.materialfx.controls.MFXTextField?>
 <?import java.net.URL?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -158,13 +158,13 @@
                            <center>
                               <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0" styleClass="vtncuentas-hbox--listas" BorderPane.alignment="CENTER">
                                  <children>
-                                    <MFXListView maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="vtncuentas-lista" HBox.hgrow="ALWAYS" />
+                                    <ListView fx:id="listViewCuentas" onDragDetected="#OnDragDetectedCuentas" onDragDropped="#OnDragDroppedCuentas" onDragOver="#OnDragOverCuentas" prefHeight="200.0" prefWidth="200.0" />
                                     <ImageView fitHeight="34.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
                                           <Image url="@../resources/cambio.png" />
                                        </image>
                                     </ImageView>
-                                    <MFXListView maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="vtncuentas-lista" HBox.hgrow="ALWAYS" />
+                                    <ListView fx:id="listViewCuentasCliente" onDragDetected="#OnDragDetectedCuentasCliente" onDragDropped="#OnDragDroppedCuentasCliente" onDragOver="#OnDragOverCuentasCliente" prefHeight="200.0" prefWidth="200.0" />
                                  </children>
                               </HBox>
                            </center>
