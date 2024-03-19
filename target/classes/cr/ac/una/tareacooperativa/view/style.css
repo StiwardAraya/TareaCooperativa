@@ -221,7 +221,7 @@
 }
 
 .vtncuentas-hbox--botones{
-    -fx-spacing: auto;
+    -fx-spacing: 30px;
     -fx-padding: 5px;
     -fx-alignment: CENTER;
 }

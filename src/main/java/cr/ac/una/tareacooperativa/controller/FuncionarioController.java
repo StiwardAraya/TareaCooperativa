@@ -201,4 +201,9 @@ public class FuncionarioController implements Initializable {
 
         event.consume();
     }
+
+    @FXML
+    private void onActionCerrarButton(ActionEvent event) throws IOException{
+        //TODO
+    }
 }
