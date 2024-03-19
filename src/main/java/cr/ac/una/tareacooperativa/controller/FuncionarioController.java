@@ -66,8 +66,10 @@ public class FuncionarioController implements Initializable {
         rootCuentasView.setDisable(true);
         rootCarnetView.setVisible(false);
         rootCarnetView.setDisable(true);
-        
-         String[] items = {"Cuenta1", "Cuenta2", "Cuenta3", "Cuenta4", "Cuenta5"};
+
+        //Cargar lista de objetos cuenta
+        String[] items = {"Cuenta1", "Cuenta2", "Cuenta3", "Cuenta4", "Cuenta5"};
+
         listViewCuentas.getItems().addAll(items);
        
         listViewCuentas.setOnDragDetected(this::OnDragDetectedCuentas);

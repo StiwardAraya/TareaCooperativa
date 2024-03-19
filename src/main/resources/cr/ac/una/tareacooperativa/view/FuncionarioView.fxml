@@ -158,13 +158,13 @@
                            <center>
                               <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0" styleClass="vtncuentas-hbox--listas" BorderPane.alignment="CENTER">
                                  <children>
-                                    <ListView fx:id="listViewCuentas" onDragDetected="#OnDragDetectedCuentas" onDragDropped="#OnDragDroppedCuentas" onDragOver="#OnDragOverCuentas" prefHeight="200.0" prefWidth="200.0" />
+                                    <ListView fx:id="listViewCuentas" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onDragDetected="#OnDragDetectedCuentas" onDragDropped="#OnDragDroppedCuentas" onDragOver="#OnDragOverCuentas" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
                                     <ImageView fitHeight="34.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
                                           <Image url="@../resources/cambio.png" />
                                        </image>
                                     </ImageView>
-                                    <ListView fx:id="listViewCuentasCliente" onDragDetected="#OnDragDetectedCuentasCliente" onDragDropped="#OnDragDroppedCuentasCliente" onDragOver="#OnDragOverCuentasCliente" prefHeight="200.0" prefWidth="200.0" />
+                                    <ListView fx:id="listViewCuentasCliente" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onDragDetected="#OnDragDetectedCuentasCliente" onDragDropped="#OnDragDroppedCuentasCliente" onDragOver="#OnDragOverCuentasCliente" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
                                  </children>
                               </HBox>
                            </center>
