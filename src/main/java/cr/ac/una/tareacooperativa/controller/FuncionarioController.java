@@ -69,7 +69,6 @@ public class FuncionarioController implements Initializable {
 
         //Cargar lista de objetos cuenta
         String[] items = {"Cuenta1", "Cuenta2", "Cuenta3", "Cuenta4", "Cuenta5"};
-
         listViewCuentas.getItems().addAll(items);
        
         listViewCuentas.setOnDragDetected(this::OnDragDetectedCuentas);
@@ -137,73 +136,72 @@ public class FuncionarioController implements Initializable {
 
     @FXML
     private void OnDragDetectedCuentas(MouseEvent event) {
-        String itemToDrag = listViewCuentas.getSelectionModel().getSelectedItem();
-        Dragboard dragboard = listViewCuentas.startDragAndDrop(TransferMode.COPY);
-        ClipboardContent content = new ClipboardContent();
-        content.putString(itemToDrag);
-        dragboard.setContent(content);
-        event.consume();
+          OnDragDetectedListas(event,listViewCuentas);
     }
 
 
     @FXML
     private void OnDragDroppedCuentas(DragEvent event) {
-        String item = event.getDragboard().getString();
-        listViewCuentas.getItems().add(item);
-
-        // Remove the item from the source list
-        ListView<?> source = (ListView<?>) event.getGestureSource();
-        source.getItems().remove(item);
-
-        event.setDropCompleted(true);
-        event.consume();
+      OnDragDroppedListas(event,listViewCuentas); 
     }
 
      @FXML
     private void OnDragOverCuentas(DragEvent event) {
-        if (event.getGestureSource() != listViewCuentas &&
-                event.getDragboard().hasString()) {
-            event.acceptTransferModes(TransferMode.COPY);
-        }
-          event.consume();
+       onDragOverListas(event, listViewCuentas);
     }
      
     @FXML
     private void OnDragDetectedCuentasCliente(MouseEvent event) {
-        String itemToDrag = listViewCuentasCliente.getSelectionModel().getSelectedItem();
-        Dragboard dragboard = listViewCuentasCliente.startDragAndDrop(TransferMode.COPY);
-        ClipboardContent content = new ClipboardContent();
-        content.putString(itemToDrag);
-        dragboard.setContent(content);
-
-        event.consume();
+        OnDragDetectedListas(event,listViewCuentasCliente);
     }
 
     @FXML
     private void OnDragDroppedCuentasCliente(DragEvent event) {
-      String item = event.getDragboard().getString();
-        listViewCuentasCliente.getItems().add(item);
-
-        // Remove the item from the source list
-        ListView<?> source = (ListView<?>) event.getGestureSource();
-        source.getItems().remove(item);
-
-        event.setDropCompleted(true);
-        event.consume();  
+      OnDragDroppedListas(event, listViewCuentasCliente);
     }
 
     @FXML
     private void OnDragOverCuentasCliente(DragEvent event) {
-        if (event.getGestureSource() != listViewCuentasCliente &&
-                event.getDragboard().hasString()) {
-            event.acceptTransferModes(TransferMode.COPY);
-        }
-
-        event.consume();
+        onDragOverListas(event, listViewCuentasCliente);
     }
 
     @FXML
     private void onActionCerrarButton(ActionEvent event) throws IOException{
         //TODO
     }
+    
+    
+    private void OnDragDetectedListas(MouseEvent event, ListView<String> lista) {
+    String itemToDrag = lista.getSelectionModel().getSelectedItem();
+        Dragboard dragboard = lista.startDragAndDrop(TransferMode.COPY);
+        ClipboardContent content = new ClipboardContent();
+        content.putString(itemToDrag);
+        dragboard.setContent(content);
+        
+        event.consume();
+    
+    }
+    
+     private void OnDragDroppedListas(DragEvent event, ListView<String> lista) {
+     String item = event.getDragboard().getString();
+        lista.getItems().add(item);
+
+        ListView<?> source = (ListView<?>) event.getGestureSource();
+        source.getItems().remove(item);
+
+        event.setDropCompleted(true);
+        event.consume();   
+     
+     }
+   
+    private void onDragOverListas(DragEvent event, ListView<String> lista){
+ 
+    if (event.getGestureSource() != lista &&
+                event.getDragboard().hasString()) {
+            event.acceptTransferModes(TransferMode.COPY);
+        }
+
+        event.consume();
+    }  
+    
 }
