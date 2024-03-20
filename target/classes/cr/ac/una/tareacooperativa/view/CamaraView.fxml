@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
 <?import java.lang.String?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
@@ -21,6 +22,7 @@
                <children>
                   <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="250.0" spacing="35.0" styleClass="standard-vbox" HBox.hgrow="ALWAYS">
                      <children>
+                        <MFXButton fx:id="TakePic" onAction="#onHandleTakePic" text="TakePic" />
                         <Label styleClass="login-web--label" text="Asociado: " />
                         <HBox alignment="CENTER_LEFT">
                            <children>
@@ -81,6 +83,9 @@
                                           <String fx:value="images" />
                                           <String fx:value="foto-background" />
                                        </styleClass>
+                                       <children>
+                                          <ImageView fx:id="previewImageView" fitHeight="150.0" fitWidth="253.0" pickOnBounds="true" preserveRatio="true" />
+                                       </children>
                                     </Pane>
                                     <Separator nodeOrientation="LEFT_TO_RIGHT" prefWidth="66.0" VBox.vgrow="ALWAYS" />
                                     <Pane layoutX="10.0" layoutY="109.0" prefHeight="200.0" prefWidth="366.0" VBox.vgrow="ALWAYS">

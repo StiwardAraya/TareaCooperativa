@@ -2,6 +2,7 @@ cr\ac\una\tareacooperativa\model\NiñoAsociado.class
 cr\ac\una\tareacooperativa\util\Respuesta.class
 cr\ac\una\tareacooperativa\util\Formato.class
 cr\ac\una\tareacooperativa\controller\AsociadoController.class
+cr\ac\una\tareacooperativa\controller\CamaraController$1.class
 cr\ac\una\tareacooperativa\App.class
 cr\ac\una\tareacooperativa\util\FlowController.class
 cr\ac\una\tareacooperativa\controller\CamaraController.class
@@ -17,4 +18,5 @@ cr\ac\una\tareacooperativa\controller\LoginController.class
 cr\ac\una\tareacooperativa\model\NiñoFuncionario.class
 cr\ac\una\tareacooperativa\controller\FuncionarioController.class
 cr\ac\una\tareacooperativa\controller\MantenimientoCoopeController.class
+cr\ac\una\tareacooperativa\util\Camara.class
 cr\ac\una\tareacooperativa\controller\Controller.class
