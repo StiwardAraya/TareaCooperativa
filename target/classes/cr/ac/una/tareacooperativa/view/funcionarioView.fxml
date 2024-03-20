@@ -176,7 +176,7 @@
                                           <Insets />
                                        </HBox.margin>
                                     </MFXButton>
-                                    <MFXButton maxHeight="1.7976931348623157E308" maxWidth="300.0" styleClass="vtncuentas-boton--cerrar" text="Cerrar" HBox.hgrow="ALWAYS">
+                                    <MFXButton maxHeight="1.7976931348623157E308" maxWidth="300.0" onAction="#onActionCerrarButton" styleClass="vtncuentas-boton--cerrar" text="Cerrar" HBox.hgrow="ALWAYS">
                                        <HBox.margin>
                                           <Insets />
                                        </HBox.margin>
