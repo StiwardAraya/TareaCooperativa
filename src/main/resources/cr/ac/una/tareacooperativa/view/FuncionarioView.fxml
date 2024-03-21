@@ -20,9 +20,9 @@
         <URL value="@style.css" />
     </stylesheets>
    <children>
-      <HBox layoutX="224.0" layoutY="126.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <children>
-            <VBox maxWidth="400.0" prefHeight="396.0" prefWidth="220.0" styleClass="funcionario-vbox--menu_principal" HBox.hgrow="ALWAYS">
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox maxWidth="400.0" prefHeight="396.0" prefWidth="220.0" styleClass="funcionario-vbox--menu_principal" BorderPane.alignment="CENTER">
                <children>
                   <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="funcionario-hbox--tituloLogo" VBox.vgrow="ALWAYS">
                      <children>
@@ -105,33 +105,20 @@
                   </HBox>
                </children>
             </VBox>
+         </left>
+         <center>
+            <StackPane prefHeight="396.0" prefWidth="474.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0" />
+                  <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" styleClass="funcionario-imagen" />
+               </children>
+            </StackPane>
+         </center>
+      </BorderPane>
+      <HBox layoutX="224.0" layoutY="126.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
             <StackPane maxWidth="1.7976931348623157E308" prefHeight="396.0" prefWidth="457.0" HBox.hgrow="ALWAYS">
                <children>
-                  <Pane prefHeight="200.0" prefWidth="200.0" styleClass="funcionario-imagen" />
-                  <AnchorPane fx:id="rootAsociadosView" prefHeight="200.0" prefWidth="200.0" styleClass="funcionario-root--view">
-                     <StackPane.margin>
-                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-                     </StackPane.margin>
-                     <children>
-                        <Label text="Asociados" />
-                     </children>
-                  </AnchorPane>
-                  <AnchorPane fx:id="rootCarnetView" prefHeight="200.0" prefWidth="200.0" styleClass="funcionario-root--view">
-                     <StackPane.margin>
-                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-                     </StackPane.margin>
-                     <children>
-                        <Label text="Carnet" />
-                     </children>
-                  </AnchorPane>
-                  <AnchorPane fx:id="rootTransaccionesView" prefHeight="200.0" prefWidth="200.0" styleClass="funcionario-root--view">
-                     <StackPane.margin>
-                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-                     </StackPane.margin>
-                     <children>
-                        <Label text="Transacciones" />
-                     </children>
-                  </AnchorPane>
                   <AnchorPane fx:id="rootCuentasView" prefHeight="200.0" prefWidth="200.0" styleClass="funcionario-root--view">
                      <StackPane.margin>
                         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />

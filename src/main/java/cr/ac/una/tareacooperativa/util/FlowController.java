@@ -6,6 +6,7 @@
 package cr.ac.una.tareacooperativa.util;
 
 import cr.ac.una.tareacooperativa.App;
+import cr.ac.una.tareacooperativa.controller.Controller;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.ResourceBundle;
@@ -20,7 +21,6 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
-import cr.ac.una.unaplanillaj21.controller.Controller;
 import io.github.palexdev.materialfx.css.themes.MFXThemeManager;
 import io.github.palexdev.materialfx.css.themes.Themes;
 
