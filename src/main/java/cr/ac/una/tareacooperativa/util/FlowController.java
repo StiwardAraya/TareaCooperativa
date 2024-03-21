@@ -83,7 +83,7 @@ public class FlowController {
 
     public void goMain() {
         try {
-            this.mainStage.setScene(new Scene(FXMLLoader.load(App.class.getResource("view/LoginView.fxml"), this.idioma)));
+            this.mainStage.setScene(new Scene(FXMLLoader.load(App.class.getResource("view/FuncionarioView.fxml"), this.idioma)));
             MFXThemeManager.addOn(this.mainStage.getScene(), Themes.DEFAULT, Themes.LEGACY);
             this.mainStage.show();
         } catch (IOException ex) {

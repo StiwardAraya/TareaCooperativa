@@ -20,7 +20,7 @@
    <children>
       <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <left>
-            <VBox maxWidth="400.0" prefHeight="396.0" prefWidth="220.0" styleClass="funcionario-vbox--menu_principal" BorderPane.alignment="CENTER">
+            <VBox maxWidth="600.0" prefHeight="396.0" prefWidth="220.0" styleClass="funcionario-vbox--menu_principal" BorderPane.alignment="CENTER">
                <children>
                   <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="funcionario-hbox--tituloLogo" VBox.vgrow="ALWAYS">
                      <children>
@@ -107,8 +107,11 @@
          <center>
             <StackPane prefHeight="396.0" prefWidth="474.0" BorderPane.alignment="CENTER">
                <children>
-                  <VBox prefHeight="200.0" prefWidth="100.0" />
                   <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" styleClass="funcionario-imagen" />
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="main-center--vbox">
+                     <StackPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </StackPane.margin></VBox>
                </children>
             </StackPane>
          </center>

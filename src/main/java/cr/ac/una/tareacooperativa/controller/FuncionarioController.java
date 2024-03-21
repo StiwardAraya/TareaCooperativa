@@ -28,7 +28,8 @@ import javafx.scene.layout.BorderPane;
 public class FuncionarioController implements Initializable {
 
     @FXML
-    private BorderPane root;
+    private AnchorPane root;
+
 
     /**
      * Initializes the controller class.
@@ -81,7 +82,7 @@ public class FuncionarioController implements Initializable {
      */
     @FXML
     private void onActionSalirButton(ActionEvent event) throws IOException {
-        App.setRoot("loginView");
+        //TODO
     }
 
 }

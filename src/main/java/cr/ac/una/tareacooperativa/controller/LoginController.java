@@ -3,7 +3,8 @@ package cr.ac.una.tareacooperativa.controller;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-import cr.ac.una.tareacooperativa.App;
+
+import cr.ac.una.tareacooperativa.util.FlowController;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.fxml.Initializable;
@@ -19,7 +20,7 @@ import javafx.scene.layout.AnchorPane;
  * @author Stiward Araya 
  * @author Justin Mendez
  */
-public class LoginController implements Initializable {
+public class LoginController extends Controller implements Initializable {
 
 
     @javafx.fxml.FXML
@@ -36,6 +37,9 @@ public class LoginController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {}
+
+    @Override
+    public void initialize() {}
 
     /**
      * Control de evento, enlace web
@@ -54,7 +58,7 @@ public class LoginController implements Initializable {
      */
     @javafx.fxml.FXML
     public void onActionBtnFuncionarios(ActionEvent actionEvent) throws IOException {
-        App.setRoot("funcionarioView");
+        FlowController.getInstance().goMain();
     }
 
     /**
@@ -64,7 +68,7 @@ public class LoginController implements Initializable {
      */
     @javafx.fxml.FXML
     public void onActionBtnProfesores(ActionEvent actionEvent) throws IOException {
-        App.setRoot("profesorView");
+        //TODO
     }
 
     /**
@@ -74,6 +78,6 @@ public class LoginController implements Initializable {
      */
     @javafx.fxml.FXML
     public void onActionBtnAsociados(ActionEvent actionEvent) throws IOException {
-        App.setRoot("asociadoView");
+        //TODO
     }
 }

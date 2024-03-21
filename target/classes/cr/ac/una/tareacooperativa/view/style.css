@@ -16,6 +16,10 @@
     -fx-padding: 0;
 }
 
+.main-center--vbox{
+    -fx-opacity: 0;
+}
+
 /* LOGIN VIEW */
 
 .login-titulo{
