@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import io.github.palexdev.materialfx.controls.MFXButton?>
-<?import io.github.palexdev.materialfx.controls.MFXTextField?>
 <?import java.net.URL?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ListView?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -20,9 +18,9 @@
         <URL value="@style.css" />
     </stylesheets>
    <children>
-      <HBox layoutX="224.0" layoutY="126.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <children>
-            <VBox maxWidth="400.0" prefHeight="396.0" prefWidth="220.0" styleClass="funcionario-vbox--menu_principal" HBox.hgrow="ALWAYS">
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox maxWidth="400.0" prefHeight="396.0" prefWidth="220.0" styleClass="funcionario-vbox--menu_principal" BorderPane.alignment="CENTER">
                <children>
                   <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="funcionario-hbox--tituloLogo" VBox.vgrow="ALWAYS">
                      <children>
@@ -105,91 +103,15 @@
                   </HBox>
                </children>
             </VBox>
-            <StackPane maxWidth="1.7976931348623157E308" prefHeight="396.0" prefWidth="457.0" HBox.hgrow="ALWAYS">
+         </left>
+         <center>
+            <StackPane prefHeight="396.0" prefWidth="474.0" BorderPane.alignment="CENTER">
                <children>
-                  <Pane prefHeight="200.0" prefWidth="200.0" styleClass="funcionario-imagen" />
-                  <AnchorPane fx:id="rootAsociadosView" prefHeight="200.0" prefWidth="200.0" styleClass="funcionario-root--view">
-                     <StackPane.margin>
-                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-                     </StackPane.margin>
-                     <children>
-                        <Label text="Asociados" />
-                     </children>
-                  </AnchorPane>
-                  <AnchorPane fx:id="rootCarnetView" prefHeight="200.0" prefWidth="200.0" styleClass="funcionario-root--view">
-                     <StackPane.margin>
-                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-                     </StackPane.margin>
-                     <children>
-                        <Label text="Carnet" />
-                     </children>
-                  </AnchorPane>
-                  <AnchorPane fx:id="rootTransaccionesView" prefHeight="200.0" prefWidth="200.0" styleClass="funcionario-root--view">
-                     <StackPane.margin>
-                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-                     </StackPane.margin>
-                     <children>
-                        <Label text="Transacciones" />
-                     </children>
-                  </AnchorPane>
-                  <AnchorPane fx:id="rootCuentasView" prefHeight="200.0" prefWidth="200.0" styleClass="funcionario-root--view">
-                     <StackPane.margin>
-                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-                     </StackPane.margin>
-                     <children>
-                        <BorderPane layoutX="107.0" layoutY="64.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                           <top>
-                              <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="414.0" styleClass="vtncuentas-vbox" BorderPane.alignment="CENTER">
-                                 <children>
-                                    <Label maxHeight="1.7976931348623157E308" styleClass="vtncuentas-titulo" text="Cuentas" VBox.vgrow="ALWAYS">
-                                       <VBox.margin>
-                                          <Insets />
-                                       </VBox.margin>
-                                    </Label>
-                                    <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="vtncuentas-hbox--form_folio" VBox.vgrow="ALWAYS">
-                                       <children>
-                                          <MFXTextField floatMode="BORDER" floatingText="Folio" maxHeight="1.7976931348623157E308" maxWidth="120.0" styleClass="vtncuentas-txtfolio" HBox.hgrow="ALWAYS" />
-                                          <MFXButton maxHeight="1.7976931348623157E308" maxWidth="100.0" styleClass="vtncuentas-boton" text="Buscar" HBox.hgrow="ALWAYS" />
-                                       </children>
-                                    </HBox>
-                                 </children>
-                              </VBox>
-                           </top>
-                           <center>
-                              <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0" styleClass="vtncuentas-hbox--listas" BorderPane.alignment="CENTER">
-                                 <children>
-                                    <ListView fx:id="listViewCuentas" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onDragDetected="#OnDragDetectedCuentas" onDragDropped="#OnDragDroppedCuentas" onDragOver="#OnDragOverCuentas" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
-                                    <ImageView fitHeight="34.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../resources/cambio.png" />
-                                       </image>
-                                    </ImageView>
-                                    <ListView fx:id="listViewCuentasCliente" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onDragDetected="#OnDragDetectedCuentasCliente" onDragDropped="#OnDragDroppedCuentasCliente" onDragOver="#OnDragOverCuentasCliente" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
-                                 </children>
-                              </HBox>
-                           </center>
-                           <bottom>
-                              <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="56.0" prefWidth="414.0" styleClass="vtncuentas-hbox--botones" BorderPane.alignment="CENTER">
-                                 <children>
-                                    <MFXButton maxHeight="1.7976931348623157E308" maxWidth="300.0" styleClass="vtncuentas-boton" text="Guardar" HBox.hgrow="ALWAYS">
-                                       <HBox.margin>
-                                          <Insets />
-                                       </HBox.margin>
-                                    </MFXButton>
-                                    <MFXButton maxHeight="1.7976931348623157E308" maxWidth="300.0" onAction="#onActionCerrarButton" styleClass="vtncuentas-boton--cerrar" text="Cerrar" HBox.hgrow="ALWAYS">
-                                       <HBox.margin>
-                                          <Insets />
-                                       </HBox.margin>
-                                    </MFXButton>
-                                 </children>
-                              </HBox>
-                           </bottom>
-                        </BorderPane>
-                     </children>
-                  </AnchorPane>
+                  <VBox prefHeight="200.0" prefWidth="100.0" />
+                  <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" styleClass="funcionario-imagen" />
                </children>
             </StackPane>
-         </children>
-      </HBox>
+         </center>
+      </BorderPane>
    </children>
 </AnchorPane>
