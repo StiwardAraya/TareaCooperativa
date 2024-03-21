@@ -30,21 +30,28 @@ import javafx.concurrent.Task;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import javafx.event.EventHandler;
+import javafx.stage.WindowEvent;
 
 import javax.imageio.ImageIO;
 public class CamaraController extends Controller implements Initializable {
-
+ 
+    private Webcam webcam;
+    private boolean isRunning;
+    
     @FXML
     private ImageView previewImageView;
     @FXML
-    private MFXButton TakePic;
-
-    private Webcam webcam;
-    private boolean isRunning;
+    private ImageView fotoCapturada;
+    @FXML
+    private MFXButton btnPowerOn_OffCamera;
+    @FXML
+    private MFXButton btnTomarFoto;
 
     @Override
     public void initialize() {
@@ -54,14 +61,8 @@ public class CamaraController extends Controller implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         webcam = Webcam.getDefault();
         webcam.setViewSize(new Dimension(WebcamResolution.VGA.getWidth(), WebcamResolution.VGA.getHeight()));
-        if (!isRunning) {
-            startCameraPreview();
-
-        } else {
-            stopCameraPreview();
-
-        }
-        isRunning = !isRunning;
+        isRunning = false;
+        
     }
 
     private void startCameraPreview() {
@@ -70,11 +71,11 @@ public class CamaraController extends Controller implements Initializable {
             protected Void call() throws Exception {
                 try {
                     webcam.open();
-                    while (isRunning) {
+                    while (isRunning){
                         BufferedImage image = webcam.getImage();
                         Image javafxImage = SwingFXUtils.toFXImage(image, null);
                         Platform.runLater(() -> previewImageView.setImage(javafxImage));
-                        Thread.sleep(103); // Update preview at 30 FPS (adjust as needed)
+                        Thread.sleep(17); // Update preview at 60 FPS (adjust as needed)
                     }
                     webcam.close();
                 } catch (Exception e) {
@@ -85,11 +86,7 @@ public class CamaraController extends Controller implements Initializable {
         };
         new Thread(task).start();
     }
-
-    private void stopCameraPreview() {
-        webcam.close();
-    }
-
+ 
     @FXML
     public void onHandleTakePic(ActionEvent event) throws IOException {
         try {
@@ -97,20 +94,26 @@ public class CamaraController extends Controller implements Initializable {
             BufferedImage image = webcam.getImage();
             // Generate a unique filename (refer to your existing code for this)
             ImageIO.write(image, "JPG", new File("New_photo.jpg"));
-            webcam.close();
+            //webcam.close();
+            Image javafxImage = SwingFXUtils.toFXImage(image, null);
+        
+        // Set the JavaFX Image to the ImageView
+        fotoCapturada.setImage(javafxImage);
+            
         } catch (Exception e) {
             e.printStackTrace();
             System.err.println("Error capturing image!");
         }
     }
 
-    public void onHandleViewPhoto(ActionEvent event) {
-        FlowController.getInstance().goViewInWindow("ViewPhoto");
+    @FXML
+    private void powerOn_OffCamera(ActionEvent event) {
+         if (!isRunning) {
+            startCameraPreview();
+        } else {
+            webcam.close();
+        }
+        isRunning = !isRunning;
     }
     
-    /* @FXML
-    private void volver(ActionEvent event) throws IOException {
-        App.setRoot("loginView");
-    }
-*/
 }
