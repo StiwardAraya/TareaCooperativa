@@ -3,17 +3,10 @@ package cr.ac.una.tareacooperativa.controller;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-import cr.ac.una.tareacooperativa.App;
+import cr.ac.una.tareacooperativa.util.FlowController;
 import javafx.event.ActionEvent;
-import javafx.scene.layout.AnchorPane;
-import javafx.scene.input.ClipboardContent;
-import javafx.scene.input.DragEvent;
-import javafx.scene.input.Dragboard;
-import javafx.scene.input.MouseEvent;
-import javafx.scene.input.TransferMode;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.ListView;
 import javafx.scene.layout.BorderPane;
 
 
@@ -25,10 +18,10 @@ import javafx.scene.layout.BorderPane;
  * @author Stiward Araya
  * @author Justin Mendez
  */
-public class FuncionarioController implements Initializable {
+public class FuncionarioController extends Controller implements Initializable {
 
     @FXML
-    private AnchorPane root;
+    private BorderPane root;
 
 
     /**
@@ -38,6 +31,9 @@ public class FuncionarioController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) { }
+
+    @Override
+    public void initialize() {}
 
     /**
      * Control de evento, botón Asociados
@@ -63,7 +59,7 @@ public class FuncionarioController implements Initializable {
      */
     @FXML
     public void onActionCuentasButton(ActionEvent actionEvent) {
-        //TODO
+        FlowController.getInstance().goView("CuentasView");
     }
 
     /**

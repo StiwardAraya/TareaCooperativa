@@ -3,12 +3,12 @@ package cr.ac.una.tareacooperativa.controller;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ListView;
 import javafx.scene.input.*;
+import javafx.scene.layout.BorderPane;
 
 /**
  * Universidad Nacional - Programación II 2024
@@ -18,12 +18,14 @@ import javafx.scene.input.*;
  * @author Stiward Araya
  * @author Justin Mendez
  */
-public class CuentasController implements Initializable {
+public class CuentasController extends Controller implements Initializable {
 
     @FXML
     private ListView<String> listViewCuentas;
     @FXML
     private ListView<String> listViewCuentasCliente;
+    @FXML
+    private BorderPane root;
 
     /**
      * Initializes the controller class.
@@ -42,6 +44,9 @@ public class CuentasController implements Initializable {
         listViewCuentasCliente.setOnDragOver(this::OnDragOverCuentasCliente);
         listViewCuentasCliente.setOnDragDropped(this::OnDragDroppedCuentasCliente);
     }
+
+    @Override
+    public void initialize() {}
 
     @FXML
     private void OnDragDetectedCuentas(MouseEvent event) {
@@ -107,5 +112,4 @@ public class CuentasController implements Initializable {
     private void onActionCerrarButton(ActionEvent event) throws IOException{
         //TODO
     }
-
 }
