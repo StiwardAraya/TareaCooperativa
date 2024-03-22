@@ -46,7 +46,7 @@
                                     <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                                  </HBox.margin>
                               </ImageView>
-                              <MFXButton fx:id="btnTomatFoto" onAction="#onHandleTakePic" text="Tomar Foto" />
+                              <MFXButton fx:id="btnTomarFoto" onAction="#onHandleTakePic" text="Tomar Foto" />
                            </children>
                         </HBox>
                         <HBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="350.0">
