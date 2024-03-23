@@ -27,7 +27,7 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FlowController.getInstance().InitializeFlow(stage, null);
-        FlowController.getInstance().goViewInWindow("CamaraView");
+        FlowController.getInstance().goViewInWindow("LoginView");
     }
 
     public static void main(String[] args) {

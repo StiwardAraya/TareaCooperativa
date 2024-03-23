@@ -58,7 +58,7 @@ public class CamaraController extends Controller implements Initializable {
         
     }
 
-    private void startCameraPreview() {
+ private void startCameraPreview() {
         Task<Void> task;
         task = new Task<Void>() {
             @Override
@@ -108,10 +108,10 @@ public class CamaraController extends Controller implements Initializable {
     @FXML
     private void onActionBtnGuardar(ActionEvent event) {
              try {
-        String nombreFoto = "001";
+        String asociadoID = "001";// tomar el folio del asociado y asignarle el mismo nombre a la foto
         Image image = fotoCapturada.getImage();   
         String basePath = System.getProperty("user.dir") + "/src/main/resources/cr/ac/una/tareacooperativa/resources/FotosAsociados/";  
-        String ruta = basePath + nombreFoto + ".png";     
+        String ruta = basePath + asociadoID + ".png";     
         File directorio = new File(basePath);
         
         if (!directorio.exists()) {
