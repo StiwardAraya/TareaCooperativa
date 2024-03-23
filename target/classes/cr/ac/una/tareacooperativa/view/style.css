@@ -334,14 +334,18 @@
 }
 
 .camara-background{
-     -fx-background-image: url("../resources/pp.jpg");
+     -fx-background-image: url("../resources/StudioKidsBackground.jpg");
 }
+
 .foto-background{
      -fx-background-image: url("../resources/camera.png");
-      -fx-border-color: #ccc;
-    -fx-border-width: 10px;
-    -fx-border-style: solid;
--fx-border-color: black;
+      -fx-border-color: red;
+  -fx-border-width: 2px;
+  -fx-border-style: solid;
+  -fx-border-radius: 5px;
+   -fx-width: 100%;
+  -fx-height: 100%;
+  -fx-object-fit: cover;
      
 }
 .images{

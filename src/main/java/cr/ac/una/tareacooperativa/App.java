@@ -27,12 +27,12 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FlowController.getInstance().InitializeFlow(stage, null);
-        FlowController.getInstance().goViewInWindow("LoginView");
+        FlowController.getInstance().goViewInWindow("CamaraView");
     }
 
     public static void main(String[] args) {
-       // launch();
-       createPdf();
+        launch();
+      //createPdf();
  
     }
      public static void createPdf() {
@@ -53,6 +53,5 @@ public class App extends Application {
         System.out.println("Error al crear el PDF: " + ex.getMessage());
     }
 }
-     
      
 }

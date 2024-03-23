@@ -44,6 +44,8 @@ public class CamaraController extends Controller implements Initializable {
     private MFXButton btnPowerOn_OffCamera;
     @FXML
     private MFXButton btnTomarFoto;
+    @FXML
+    private MFXButton btnGuardar;
 
     @Override
     public void initialize() {}
@@ -82,14 +84,9 @@ public class CamaraController extends Controller implements Initializable {
     @FXML
     public void onHandleTakePic(ActionEvent event) throws IOException {
         try {
-            // Capture the image
+          
             BufferedImage image = webcam.getImage();
-            // Generate a unique filename (refer to your existing code for this)
-            ImageIO.write(image, "JPG", new File("New_photo.jpg"));
-            //webcam.close();
             Image javafxImage = SwingFXUtils.toFXImage(image, null);
-        
-        // Set the JavaFX Image to the ImageView
         fotoCapturada.setImage(javafxImage);
             
         } catch (Exception e) {
@@ -107,5 +104,30 @@ public class CamaraController extends Controller implements Initializable {
         }
         isRunning = !isRunning;
     }
+
+    @FXML
+    private void onActionBtnGuardar(ActionEvent event) {
+             try {
+        String nombreFoto = "001";
+        Image image = fotoCapturada.getImage();   
+        String basePath = System.getProperty("user.dir") + "/src/main/resources/cr/ac/una/tareacooperativa/resources/FotosAsociados/";  
+        String ruta = basePath + nombreFoto + ".png";     
+        File directorio = new File(basePath);
+        
+        if (!directorio.exists()) {
+            directorio.mkdirs();
+        }
+    
+        BufferedImage bufferedImage = SwingFXUtils.fromFXImage(image, null);    
+        File outputFile = new File(ruta);
+        ImageIO.write(bufferedImage, "png", outputFile);
+        System.out.println("Imagen guardada exitosamente en: " + ruta);
+        
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.err.println("Error al guardar la imagen!");
+        }
+    }
+    
     
 }
