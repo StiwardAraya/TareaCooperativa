@@ -19,5 +19,6 @@ cr\ac\una\tareacooperativa\model\NiñoFuncionario.class
 cr\ac\una\tareacooperativa\controller\CuentasController.class
 cr\ac\una\tareacooperativa\controller\FuncionarioController.class
 cr\ac\una\tareacooperativa\controller\MantenimientoCoopeController.class
+cr\ac\una\tareacooperativa\model\PdfManager.class
 cr\ac\una\tareacooperativa\util\Camara.class
 cr\ac\una\tareacooperativa\controller\Controller.class

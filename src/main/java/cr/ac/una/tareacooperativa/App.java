@@ -1,10 +1,6 @@
 package cr.ac.una.tareacooperativa;
 
-
-import com.aspose.pdf.Document;
-import com.aspose.pdf.Page;
-import com.aspose.pdf.TextFragment;
-
+import cr.ac.una.tareacooperativa.model.PdfManager;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -31,27 +27,22 @@ public class App extends Application {
     }
 
     public static void main(String[] args) {
-        launch();
-      //createPdf();
- 
-    }
-     public static void createPdf() {
-    try {
-          Document pdfDocument = new Document();
-    // Agregar una página al documento
-    Page page = pdfDocument.getPages().add();
-
-    // Guardar el documento PDF
-      
-        FileOutputStream outputStream = new FileOutputStream("output.pdf");
-        page.getParagraphs().add(new TextFragment("Hello World!"));
+        //launch();
         
-        pdfDocument.save(outputStream);
-        outputStream.close();
-        System.out.println("PDF creado correctamente.");
-    } catch (IOException ex) {
-        System.out.println("Error al crear el PDF: " + ex.getMessage());
+         String folioSocio = "1";
+        String nombreSocio = "Stiward";
+        String apellidoSocio = "Araya";
+        
+       String basePdfPath = "src/main/resources/cr/ac/una/tareacooperativa/resources/PdfAsociados/BasePdf.pdf";
+       String firstPdfPath = "src/main/resources/cr/ac/una/tareacooperativa/resources/PdfAsociados/" + folioSocio + ".pdf";
+
+        // Establecer las coordenadas del texto, a partir de aqui se dibuja el nombre del usuario
+        float x = 165;
+        float y = 87;
+        float difference = 38;
+
+        PdfManager pdfExample = new PdfManager(basePdfPath, firstPdfPath, folioSocio, nombreSocio, apellidoSocio, x, y, difference);
+        pdfExample.createPdf();
     }
-}
-     
+ 
 }
